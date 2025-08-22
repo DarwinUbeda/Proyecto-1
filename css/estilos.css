@@ -1,0 +1,43 @@
+:root{
+  --fondo1:#0f2027;
+  --fondo2:#203a43;
+  --fondo3:#2c5364;
+  --texto:#e6eef5;
+}
+
+*{
+  font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  box-sizing:border-box;
+}
+
+body.fondo-gradiente{
+  background: linear-gradient(135deg, var(--fondo1), var(--fondo2), var(--fondo3));
+  color: var(--texto);
+}
+
+.titulo{ font-weight:700; letter-spacing:.5px; }
+.texto-suave{ opacity:.9; }
+.sombra{ box-shadow:0 10px 25px rgba(0,0,0,.25); }
+
+.logo{width:110px; height:auto}
+.carta{background:#11222a; border:1px solid rgba(255,255,255,.08);}
+.carta img{filter: drop-shadow(0 10px 12px rgba(0,0,0,.35));}
+.texto-suave{ opacity:.9; }
+.sombra{ box-shadow:0 10px 25px rgba(0,0,0,.25); }
+.cargando{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  display: none;
+}
+
+.list-group-item{ color:#0d1b22; } /* texto oscuro dentro del modal */
+
+.btn-favorito{ position:absolute; top:.5rem; right:.5rem; z-index:2; }
+.btn-favorito.favorito-activo{ background:#dc3545 !important; color:#fff !important; border-color:#dc3545 !important; }
+
+
+.logo { width:110px; height:auto; }
+.logo-nav { width:28px; height:28px; object-fit:contain; }
